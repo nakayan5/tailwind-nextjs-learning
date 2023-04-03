@@ -1,6 +1,6 @@
-import { MICROCMS_API } from ".."
+import { MICROCMS_API, POKE_API } from "../base"
 
-export const useApiClient = () => ({
+export const microCmsClient = () => ({
     async getPokemonList() {
         return {
             data: MICROCMS_API.get(`/pokemons`)
@@ -15,4 +15,14 @@ export const useApiClient = () => ({
 })
 
 
-export type TApiClient = ReturnType<typeof useApiClient>
+export const pokeApiClient = () => ({
+    async getPokemonList() {
+        return {
+            data: POKE_API.get('/pokemon')
+        }
+    }
+})
+
+
+export type TMicroCmsClient = ReturnType<typeof microCmsClient>
+export type TPokeClient = ReturnType<typeof pokeApiClient>
