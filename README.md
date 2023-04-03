@@ -1,3 +1,5 @@
+## Overview
+
 tailwindCSS を Next.js で使ってみるリポジトリです。
 
 ## Getting Started
@@ -22,7 +24,7 @@ pnpm dev
 - typescript / v5.0.3
 - react-query / 4.28.0
 
-## 参考記事
+## References
 
 - [公式](https://tailwindcss.com/docs/installation)
 - []()
