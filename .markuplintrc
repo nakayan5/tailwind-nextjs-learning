@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "markuplint:recommended"
+  ],
+  "excludeFiles": [
+    "./**/*.{test,spec,stories}.tsx"
+  ],
+  "parser": {
+    ".tsx$": "@markuplint/jsx-parser"
+  },
+  "specs": {
+      ".tsx$": "@markuplint/react-spec"
+  }
+}
