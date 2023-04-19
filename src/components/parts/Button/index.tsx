@@ -1,11 +1,14 @@
-import { FC } from "react"
+import { FC, HTMLAttributes } from "react"
+
+
+type T = HTMLAttributes<HTMLButtonElement>
 
 type TProps = {
     //
-}
+} & HTMLAttributes<HTMLButtonElement>
 
-export const Example: FC<TProps> = () => {
+export const Button: FC<TProps> = ({...rest}) => {
     return (
-        <div></div>
+        <button type='button' aria-label={rest["aria-label"]}>Button</button>
     )
 }
